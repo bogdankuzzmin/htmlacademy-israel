@@ -7,8 +7,9 @@
 @import 'base/_normalize';
 @import 'base/_page';
 @import 'base/_fonts';
-// @import 'base/_typography';
+@import 'base/_typography';
 
 //Layouts.
+@import 'layouts/_main-header';
 
 // Components.
