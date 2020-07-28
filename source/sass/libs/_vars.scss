@@ -20,9 +20,11 @@ $font: (
 
 // Palette.
 $palette: (
-  bg: #ffffff,
+  ligt-bg-color: #ffffff,
+  dark-bg-color: #252525,
   list-color: #FFC341,
   text-color: #484848,
+  text-light-color: #ffffff,
   title-color: #1fc0fc,
   a-hover-color: #1fc0fc,
   gradient: linear-gradient(108.42deg, #FFC341 20.46%, #FFD701 65.31%)
