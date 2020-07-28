@@ -1,0 +1,29 @@
+
+// Duration.
+$duration: (
+  transition: 0.25s,
+);
+
+// Font.
+$font: (
+  family: ('Fira Sans', Helvetica, sans-serif),
+  family-heading: ('Montserrat', Helvetica, sans-serif),
+  family-heading-two: ('Raleway', Helvetica, sans-serif),
+  weight-light: 300,
+  weight-normal: 400,
+  weight-medium: 500,
+  weight-semibold: 600,
+  weight-bold: 700,
+  weight-extrabold:	800,
+  weight-boldest:	900
+);
+
+// Palette.
+$palette: (
+  bg: #ffffff,
+  list-color: #FFC341,
+  text-color: #484848,
+  title-color: #1fc0fc,
+  a-hover-color: #1fc0fc,
+  gradient: linear-gradient(108.42deg, #FFC341 20.46%, #FFD701 65.31%)
+);
