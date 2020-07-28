@@ -1,0 +1,70 @@
+body {
+  background-color: _palette(light-bg-color);
+  color: _palette(text-color);
+}
+
+body, input, select, textarea {
+  font-size: 17px;
+  font-family: _font(family);
+  font-weight: _font(weight-normal);
+  color: _palette(text-color);
+}
+
+a {
+  font-weight: _font(weight-medium);
+  color: _palette(text-color);
+  text-decoration: none;
+  text-transform: uppercase;
+
+  transition: color _duration(transition) ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: _palette(title-color);
+  }
+
+  &:active {
+    color: darken(_palette(title-color), 25%)
+  }
+}
+
+strong, b {
+  font-weight: _font(weight-bold);
+  color: _palette(text-color);
+}
+
+em, i {
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: _palette(title-color);
+  font-family: _font(family-heading);
+  font-weight: _font(weight-bold);
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-family: _font(family-heading-two);
+  font-size: 200px;
+  font-weight: _font(weight-black);
+  line-height: 1.70;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 21px;
+}
