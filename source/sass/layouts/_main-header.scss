@@ -1,0 +1,144 @@
+.main-header {
+  padding-top: 1px;
+
+  min-height: 879px;
+  background: url('../img/main-header__girl.png') center 0px no-repeat,
+              url('../img/main-header__israel.png') center 35% no-repeat,
+              url('../img/main-header__bg.png') center 0px no-repeat;
+  background-size: 1366px 906px, 1018px 340px, 1366px 879px;
+}
+
+.main-header__wrapper {
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 0 15px;
+  width: 1142px + 30px;
+}
+
+.main-header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 15px;
+}
+
+.main-header__order-call {
+  border-bottom: 1px dashed _font(text-color);
+}
+
+.main-header__promo {
+  position: relative;
+
+  margin: 0 auto;
+  margin-top: 455px;
+  width: 350px;
+
+  p {
+    font-size: 24px;
+    font-weight: _font(weight-bold);
+    color: _palette(text-light-color);
+    text-align: center;
+  }
+}
+
+.main-header__scroll-down {
+  position: absolute;
+  left: 140px;
+  bottom: -110px;
+  z-index: 10;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 76px;
+  width: 76px;
+  margin: 0 auto;
+
+  background-color: transparent;
+
+  border: 1px dashed #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+
+  img {
+    width: 17px;
+    height: 26px;
+  }
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 54px;
+    height: 54px;
+
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+  }
+
+  &:after {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+
+    margin-bottom: -55px;
+
+    width: 1px;
+    height: 55px;
+
+    background-color: #ffffff;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-header__wrapper {
+    width: auto;
+  }
+}
+
+@media (max-width: _breakpoint(mobile)) {
+  .main-header {
+    background-position: center 85px, center 25%, center 30px;
+    background-size: 950px auto, 110% auto, 950px 679px;
+  }
+
+  .main-header__wrapper {
+    padding: 0 10px;
+  }
+
+  .main-header__top {
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 14px;
+
+    a {
+      margin-bottom: 15px;
+    }
+
+    a:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .main-header__logo {
+    position: absolute;
+    left: 10px;
+  }
+
+  .main-header__promo  {
+    margin-top: 320px;
+    width: 300px;
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .main-header__scroll-down {
+    bottom: -110px;
+  }
+}
