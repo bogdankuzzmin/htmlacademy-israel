@@ -22,3 +22,6 @@
 	@return val($palette, $keys...);
 }
 
+@function _breakpoint($keys...) {
+	@return val($breakpoint, $keys...);
+}
