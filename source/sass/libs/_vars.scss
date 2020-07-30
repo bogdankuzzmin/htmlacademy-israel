@@ -6,9 +6,9 @@ $duration: (
 
 // Font.
 $font: (
-  family: ('Fira Sans', Helvetica, sans-serif),
-  family-heading: ('Montserrat', Helvetica, sans-serif),
-  family-heading-two: ('Raleway', Helvetica, sans-serif),
+  family: ('Fira Sans', 'Helvetica', sans-serif),
+  family-heading: ('Montserrat', 'Helvetica', sans-serif),
+  family-heading-two: ('Raleway', 'Helvetica', sans-serif),
   weight-light: 300,
   weight-normal: 400,
   weight-medium: 500,
@@ -34,4 +34,10 @@ $palette: (
 $breakpoint: (
   mobile: 767px,
   tablet: 1024px
+);
+
+//Retina Screens
+$retina: (
+  dpi: 144dpi,
+  dppx: 1.5dppx
 );
