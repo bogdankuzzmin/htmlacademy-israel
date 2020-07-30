@@ -19,29 +19,24 @@
 
         <a class="main-header__logo">
           <picture>
+            <source media="(max-width: 767px)" srcset="img/logo--mobile.webp, img/logo--mobile@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 767px)" srcset="img/logo--mobile.png, img/logo--mobile@2x.png 2x" type="image/png">
             <source srcset="img/logo.webp, img/logo@2x.webp 2x" type="image/webp">
             <source srcset="img/logo.png, img/logo@2x.png 2x" type="image/png">
-            <img src="img/logo.png" srcset="img/logo@2x.png 2x" alt="Логотип компании" width="137" height="48">
+            <!-- 1х: 137px; 2x: 274px -->
+            <img src="img/logo.png" srcset="img/logo@2x.png 2x" alt="Логотип компании">
           </picture>
         </a>
 
         <a href="#" class="main-header__order-call">
-          Заказать звонок
+          заказать звонок
         </a>
       </div>
 
       <div class="main-header__promo">
-        <p class="">Учёба, путешествие и карьера для еврейской молодёжи</p>
+        <h1>Учёба, путешествие и карьера для еврейской молодёжи</h1>
 
-        <a href="#" class="main-header__scroll-down" aria-label="Переключить страницу">
-          <span>
-            <picture>
-              <source srcset="img/icon-mouse.webp, img/icon-mouse@2x.webp 2x" type="image/webp">
-              <source srcset="img/icon-mouse.png, img/icon-mouse@2x.png 2x" type="image/png">
-              <img src="img/icon-mouse.png" srcset="img/icon-mouse@2x.png 2x" alt="Иконка мышки" width="17" height="26">
-            </picture>
-          </span>
-        </a>
+        <a href="#" class="main-header__scroll-down" aria-label="Переключить страницу"></a>
       </div>
    </div>
   </header>
