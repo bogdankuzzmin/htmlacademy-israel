@@ -25,3 +25,7 @@
 @function _breakpoint($keys...) {
 	@return val($breakpoint, $keys...);
 }
+
+@function _retina($keys...) {
+	@return val($retina, $keys...);
+}
