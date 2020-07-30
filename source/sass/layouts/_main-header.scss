@@ -2,17 +2,22 @@
   padding-top: 1px;
 
   min-height: 879px;
-  background: url('../img/main-header__girl.png') center 0px no-repeat,
-              url('../img/main-header__israel.png') center 35% no-repeat,
-              url('../img/main-header__bg.png') center 0px no-repeat;
-  background-size: 1366px 906px, 1018px 340px, 1366px 879px;
+  background-color: _palette(light-bg-color);
+  background-image: url('../img/main-header__bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 1366px 906px;
+  background-position: center top;
+
+  @media (min-resolution: _retina(dpi)), (min-resolution: _retina(dppx)) {
+    background-image: url("../img/main-header__bg@2x.jpg");
+  }
 }
 
 .main-header__wrapper {
   margin: 0 auto;
   margin-top: 30px;
-  padding: 0 15px;
-  width: 1142px + 30px;
+  padding: 0 17px 0 12px;
+  width: 1142px + 29px;
 }
 
 .main-header__top {
@@ -21,76 +26,61 @@
   align-items: center;
 
   font-size: 15px;
+  line-height: 18px;
+}
+
+.main-header__logo img {
+  width: 137px;
+  height: 48px;
 }
 
 .main-header__order-call {
+  text-transform: none;
+  font-variant: small-caps;
   border-bottom: 1px dashed _font(text-color);
 }
 
 .main-header__promo {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   margin: 0 auto;
   margin-top: 455px;
   width: 350px;
 
-  p {
+  h1 {
+    margin: 0;
+    margin-bottom: 35px;
     font-size: 24px;
+    line-height: 1.2;
+    font-family: _font(family);
     font-weight: _font(weight-bold);
     color: _palette(text-light-color);
+    text-transform: none;
     text-align: center;
   }
 }
 
 .main-header__scroll-down {
-  position: absolute;
-  left: 140px;
-  bottom: -110px;
-  z-index: 10;
+  display: block;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  height: 76px;
   width: 76px;
-  margin: 0 auto;
+  height: 132px;
 
-  background-color: transparent;
+  background-image: url('../img/scroll-down.png');
+  background-size: 76px 132px;
+  background-repeat: no-repeat;
+  transition: opacity _duration(transition);
 
-  border: 1px dashed #ffffff;
-  border-radius: 50%;
-  cursor: pointer;
-
-  img {
-    width: 17px;
-    height: 26px;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    animation: bounce 0.5s ease-in-out 3;
   }
 
-  span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 54px;
-    height: 54px;
-
-    border: 1px solid #ffffff;
-    border-radius: 50%;
-  }
-
-  &:after {
-    content: '';
-
-    position: absolute;
-    bottom: 0;
-
-    margin-bottom: -55px;
-
-    width: 1px;
-    height: 55px;
-
-    background-color: #ffffff;
+  @media (min-resolution: _retina(dpi)), (min-resolution: _retina(dppx)) {
+    background-image: url('../img/scroll-down@2x.png');
   }
 }
 
@@ -102,12 +92,17 @@
 
 @media (max-width: _breakpoint(mobile)) {
   .main-header {
-    background-position: center 85px, center 25%, center 30px;
-    background-size: 950px auto, 110% auto, 950px 679px;
+    background-image: url('../img/main-header__bg--mobile.jpg');
+    background-position: center 35px;
+    background-size: 912px 617px;
+
+    @media (min-resolution: _retina(dpi)), (min-resolution: _retina(dppx)) {
+      background-image: url('../img/main-header__bg--mobile@2x.jpg');
+    }
   }
 
   .main-header__wrapper {
-    padding: 0 10px;
+    padding: 0 16px;
   }
 
   .main-header__top {
@@ -126,14 +121,15 @@
 
   .main-header__logo {
     position: absolute;
-    left: 10px;
+    left: 16px;
   }
 
   .main-header__promo  {
-    margin-top: 320px;
+    margin-top: 270px;
     width: 300px;
 
-    p {
+    h1 {
+      margin-bottom: 30px;
       font-size: 20px;
     }
   }
