@@ -1,87 +1,53 @@
-/* fira-sans-regular - latin_cyrillic */
 @font-face {
-  font-family: 'Fira Sans';
+  font-family: "Fira Sans";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Fira Sans Regular'), local('FiraSans-Regular'),
-       url('../fonts/fira-sans-v10-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/fira-sans-v10-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../fonts/FiraSans-Regular.woff2") format("woff2"),
+       url("../fonts/FiraSans-Regular.woff") format("woff");
 }
 
-/* fira-sans-500 - latin_cyrillic */
 @font-face {
-  font-family: 'Fira Sans';
+  font-family: "Fira Sans";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local('Fira Sans Medium'), local('FiraSans-Medium'),
-       url('../fonts/fira-sans-v10-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/fira-sans-v10-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../fonts/FiraSans-Medium.woff2") format("woff2"),
+       url("../fonts/FiraSans-Medium.woff") format("woff");
 }
 
-/* fira-sans-700 - latin_cyrillic */
 @font-face {
-  font-family: 'Fira Sans';
+  font-family: "Fira Sans";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Fira Sans Bold'), local('FiraSans-Bold'),
-       url('../fonts/fira-sans-v10-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/fira-sans-v10-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../fonts/FiraSans-Bold.woff2") format("woff2"),
+       url("../fonts/FiraSans-Bold.woff") format("woff");
 }
 
-/* montserrat-regular - latin_cyrillic */
 @font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'),
-       url('../fonts/montserrat-v14-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/montserrat-v14-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* montserrat-700 - latin_cyrillic */
-@font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Montserrat Bold'), local('Montserrat-Bold'),
-       url('../fonts/montserrat-v14-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/montserrat-v14-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+       url("../fonts/Montserrat-Bold.woff") format("woff");
 }
 
-/* raleway-regular - latin_cyrillic */
 @font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local(''),
-       url('../fonts/raleway-v17-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/raleway-v17-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* raleway-800 - latin_cyrillic */
-@font-face {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: local(''),
-       url('../fonts/raleway-v17-latin_cyrillic-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/raleway-v17-latin_cyrillic-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../fonts/Raleway-ExtraBold.woff2") format("woff2"),
+       url("../fonts/Raleway-ExtraBold.woff") format("woff");
 }
 
-/* raleway-900 - latin_cyrillic */
 @font-face {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: local(''),
-       url('../fonts/raleway-v17-latin_cyrillic-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/raleway-v17-latin_cyrillic-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../fonts/Raleway-Black.woff2") format("woff2"),
+       url("../fonts/Raleway-Black.woff") format("woff");
 }
