@@ -1,0 +1,220 @@
+.modal-callback {
+  position: fixed;
+  top: 50%;
+  margin-top: -240px;
+  left: 50%;
+  margin-left: -240px;
+  z-index: 200;
+
+  display: none;
+
+  padding-top: 56px;
+  padding-right: 72px;
+  padding-bottom: 40px;
+  padding-left: 48px;
+  width: 480px;
+
+  background-color: _palette(light-bg-color);
+  box-shadow: _shadow(block);
+  border-radius: 8px;
+
+  &--success {
+    display: none;
+    padding-left: 75px;
+    padding-top: 115px;
+    padding-bottom: 95px;
+  }
+
+  &--active {
+    display: block;
+  }
+}
+
+.modal-callback__checkmark {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  fill: none;
+}
+
+.modal-callback h3 {
+  margin: 0;
+  letter-spacing: -0.02em;
+  text-transform: none;
+}
+
+.modal-callback--success h3,
+.modal-callback--success p {
+  text-align: center;
+}
+
+.modal-callback__close-button {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+
+  padding: 0;
+  width: 18px;
+  height: 17px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+}
+
+.modal-callback p {
+  margin-bottom: 35px;
+
+  font-size: 15px;
+  line-height: 170%;
+}
+
+.modal-callback__input-wrapper {
+  & + button {
+    margin-top: 15px;
+  }
+
+  label {
+    @extend .visually-hidden;
+  }
+}
+
+.modal-callback__form input:not([type="checkbox"]) {
+  margin-bottom: 8px;
+  padding: 18px 40px;
+
+  width: 100%;
+
+  font-weight: _font(weight-medium);
+  border: 2px solid _palette(input-default);
+  border-radius: 80px;
+  outline: none;
+
+  &::placeholder {
+    font-variant: small-caps;
+    opacity: 0.5;
+  }
+
+  &:focus {
+    border-color: _palette(input-focus);
+  }
+}
+
+.modal-callback__button {
+  display: flex;
+  justify-content: center;
+
+  margin: 0 auto;
+  margin-left: 55px;
+  margin-bottom: 20px;
+}
+
+.modal-callback--success .modal-callback__button {
+  margin-left: 35px;
+}
+
+.modal-callback__checkbox-wrapper {
+  margin: 0 auto;
+  width: 290px;
+  padding-left: 24px;
+}
+
+.modal-callback__checkbox-wrapper input {
+  @extend .visually-hidden;
+}
+
+.modal-callback__checkbox-wrapper label {
+  position: relative;
+
+  display: block;
+  padding-left: 24px;
+
+  font-size: 13px;
+  line-height: 150%;
+  opacity: 0.74;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 16px;
+    height: 16px;
+
+    background-image: _palette(gradient);
+    border-radius: 2px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    width: 12px;
+    height: 12px;
+
+    background-color: _palette(light-bg-color);
+  }
+}
+
+.modal-callback__checkbox-wrapper input[type="checkbox"]:checked + label:after {
+  top: 0;
+  left: 4px;
+
+  width: 8px;
+  height: 12px;
+
+  background-color: transparent;
+  border: solid _palette(dark-bg-color);
+  border-width: 0 2px 2px 0;
+
+  transform: rotate(45deg);
+}
+
+.modal-callback__checkbox-wrapper input[type="checkbox"]:disabled + label:before {
+  background: _palette(input-default);
+}
+
+@media (max-width: _breakpoint(mobile)) {
+  .modal-callback {
+    top: 0;
+    left: 0;
+
+    padding-top: 170px;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    &--success {
+      padding-top: 200px;
+    }
+  }
+
+  .modal-callback__checkmark {
+    margin-bottom: 20px;
+  }
+
+  .modal-callback h3,
+  .modal-callback p {
+    text-align: center;
+  }
+
+  .modal-callback__button,
+  .modal-callback--success .modal-callback__button {
+    margin-left: auto;
+  }
+
+  .modal-callback__close-button {
+    top: 24px;
+    right: 24px;
+  }
+}
