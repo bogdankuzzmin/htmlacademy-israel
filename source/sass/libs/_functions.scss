@@ -29,3 +29,7 @@
 @function _retina($keys...) {
 	@return val($retina, $keys...);
 }
+
+@function _shadow($keys...) {
+	@return val($shadow, $keys...);
+}
