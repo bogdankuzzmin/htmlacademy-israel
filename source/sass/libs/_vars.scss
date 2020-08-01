@@ -20,14 +20,31 @@ $font: (
 
 // Palette.
 $palette: (
-  ligt-bg-color: #ffffff,
+  light-bg-color: #ffffff,
   dark-bg-color: #252525,
-  list-color: #FFC341,
-  text-color: #484848,
+
   text-light-color: #ffffff,
+  text-color: #484848,
   title-color: #1fc0fc,
+  list-color: #FFC341,
+
   a-hover-color: #1fc0fc,
-  gradient: linear-gradient(108.42deg, #FFC341 20.46%, #FFD701 65.31%)
+
+  gradient: linear-gradient(108.42deg, #FFC341 20.46%, #FFD701 65.31%),
+  gradient-hover: linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%),
+  gradient-active: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%),
+
+  input-default: #e3e3e3,
+  input-focus: #ffc341,
+  input-valid: #484848,
+  input-invalid: #ff0000
+);
+
+// Shadows
+$shadow: (
+  icon: 0px 1px 4px rgba(0, 0, 0, 0.05),
+  text: 0px 1px 4px rgba(0, 0, 0, 0.12),
+  block: 0px 3px 12px rgba(0, 0, 0, 0.1)
 );
 
 // Media queries.
