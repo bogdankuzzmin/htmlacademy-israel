@@ -1,0 +1,27 @@
+.button {
+  margin: 0 auto;
+  padding: 20px 60px;
+  min-width: 264px;
+
+  font-weight: _font(weight-medium);
+  font-variant: small-caps;
+
+  color: _palette(text-light-color);
+  background-image: _palette(gradient);
+  text-shadow: _shadow(text);
+  text-align: center;
+
+  border: none;
+  border-radius: 80px;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-image: _palette(gradient-hover);
+  }
+
+  &:active {
+    background-image: _palette(gradient-active), _palette(gradient-hover);
+  }
+}
