@@ -57,11 +57,11 @@
     <form class="modal-callback__form">
       <div class="modal-callback__input-wrapper">
         <label for="name">Введите своё имя</label>
-        <input type="text" name="name" id="name" placeholder="имя" required>
+        <input type="text" name="name" id="name" minlength="2" placeholder="имя" required>
       </div>
 
       <div class="modal-callback__input-wrapper">
-        <label for="cellphone">Введите своё имя</label>
+        <label for="cellphone">Введите номер телефона</label>
         <input type="tel" name="cellphone" id="cellphone" placeholder="телефон" required>
       </div>
 
@@ -99,5 +99,8 @@
   <div class="visually-hidden">
     <include src="build/img/sprite_auto.svg"></include>
   </div>
+
+  <script src="js/popup.js"></script>
+  <script src="js/form.js"></script>
 </body>
 </html>
