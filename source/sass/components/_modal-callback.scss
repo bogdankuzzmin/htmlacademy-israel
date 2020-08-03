@@ -84,6 +84,14 @@
   }
 }
 
+.modal-callback__input-wrapper--valid input:not([type="checkbox"]) {
+  border-color: _palette(input-valid);
+}
+
+.modal-callback__input-wrapper--invalid input:not([type="checkbox"]) {
+  border-color: _palette(input-invalid);
+}
+
 .modal-callback__form input:not([type="checkbox"]) {
   margin-bottom: 8px;
   padding: 18px 40px;
@@ -119,13 +127,20 @@
 }
 
 .modal-callback__checkbox-wrapper {
+  position: relative;
+
   margin: 0 auto;
   width: 290px;
   padding-left: 24px;
+  &--invalid {
+    color :_palette(input-invalid);
+  }
 }
 
 .modal-callback__checkbox-wrapper input {
   @extend .visually-hidden;
+  left: 32px;
+  bottom: 15px;
 }
 
 .modal-callback__checkbox-wrapper label {
@@ -180,6 +195,14 @@
 
 .modal-callback__checkbox-wrapper input[type="checkbox"]:disabled + label:before {
   background: _palette(input-default);
+}
+
+.modal-callback__checkbox-wrapper--invalid {
+  color: _palette(input-invalid);
+}
+
+.modal-callback__checkbox-wrapper--valid {
+  color: _palette(input-valid);
 }
 
 @media (max-width: _breakpoint(mobile)) {
