@@ -57,11 +57,11 @@
     <form class="modal-callback__form">
       <div class="modal-callback__input-wrapper">
         <label for="name">Введите своё имя</label>
-        <input type="text" name="name" id="name" placeholder="имя" required="">
+        <input type="text" name="name" id="name" minlength="2" placeholder="имя" required="">
       </div>
 
       <div class="modal-callback__input-wrapper">
-        <label for="cellphone">Введите своё имя</label>
+        <label for="cellphone">Введите номер телефона</label>
         <input type="tel" name="cellphone" id="cellphone" placeholder="телефон" required="">
       </div>
 
@@ -81,7 +81,7 @@
 
     <h3>Заявка принята</h3>
 
-    <button class="modal-callback__close-button" type="button" aria-label="Закрыть окно">
+    <button class="modal-callback__close-button modal-callback__close-button--success" type="button" aria-label="Закрыть окно">
       <svg width="18" height="17">
         <use xlink:href="#icon-close"></use>
       </svg>
@@ -91,7 +91,7 @@
       Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!
     </p>
 
-    <button class="modal-callback__button button" type="button">понятно</button>
+    <button class="modal-callback__button modal-callback__button--got-it button" type="button">понятно</button>
   </div>
 
   <div class="modal-overlay"></div>
@@ -120,5 +120,8 @@
 
 </symbol></svg>
   </div>
+
+  <script src="js/popup.js"></script>
+  <script src="js/form.js"></script>
 </body>
 </html>
