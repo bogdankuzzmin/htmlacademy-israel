@@ -2,45 +2,51 @@
 
 (function () {
   var orderButton = document.querySelector('.main-header__order-call');
-  var modalOverlay = document.querySelector('.modal-overlay');
-  var modalCallOrder = document.querySelector('.modal-callback--request');
+  var modalOpen = document.querySelector('.modal-callback');
+  var modalCallOrder = document.querySelector('.modal-callback__wrapper--request');
   var closePopupCallOrder = document.querySelector('.modal-callback__close-button');
 
-  var modalSuccess = document.querySelector('.modal-callback--success');
+  var modalSuccess = document.querySelector('.modal-callback__wrapper--success');
   var closePopupSuccess = document.querySelector('.modal-callback__close-button--success');
   var closePopupSuccessMain = document.querySelector('.modal-callback__button--got-it');
 
+  var body = document.querySelector('body');
+
   var openModalCallOrderHandler = function () {
-    modalOverlay.classList.add('modal-overlay--active');
-    modalCallOrder.classList.add('modal-callback--active');
-    document.body.classList.add('scroll-lock');
+    // modalOverlay.classList.add('modal-overlay--active');
+
+    modalCallOrder.classList.add('modal-callback__wrapper--active');
+    modalOpen.classList.add('modal-callback--active');
+    body.classList.add('scroll-lock');
 
     document.addEventListener('keydown', popupPresEscHandler);
-    modalOverlay.addEventListener('click', clickModalOverlayHandler);
+    modalOpen.addEventListener('click', clickModalOverlayHandler);
     closePopupCallOrder.addEventListener('click', closeModalCallOrderHandler);
     closePopupSuccess.addEventListener('click', closeModalSuccessHandler);
     closePopupSuccessMain.addEventListener('click', closeModalSuccessHandler);
   };
 
   var closeModalCallOrderHandler = function () {
-    modalOverlay.classList.remove('modal-overlay--active');
-    modalCallOrder.classList.remove('modal-callback--active');
-    document.body.classList.remove('scroll-lock');
+    modalOpen.classList.remove('modal-callback--active');
+    modalCallOrder.classList.remove('modal-callback__wrapper--active');
+    body.classList.remove('scroll-lock');
 
     document.removeEventListener('keydown', popupPresEscHandler);
-    modalOverlay.removeEventListener('click', clickModalOverlayHandler);
+    modalOpen.removeEventListener('click', clickModalOverlayHandler);
     closePopupCallOrder.removeEventListener('click', closeModalCallOrderHandler);
     closePopupSuccess.removeEventListener('click', closeModalSuccessHandler);
   };
 
   var closeModalSuccessHandler = function () {
     closeModalCallOrderHandler();
-    modalSuccess.classList.remove('modal-callback--active');
+    modalSuccess.classList.remove('modal-callback__wrapper--active');
   };
 
-  var clickModalOverlayHandler = function () {
-    closeModalCallOrderHandler();
-    closeModalSuccessHandler();
+  var clickModalOverlayHandler = function (evt) {
+    if (evt.target.matches('.modal-callback')) {
+      closeModalCallOrderHandler();
+      closeModalSuccessHandler();
+    }
   };
 
   var popupPresEscHandler = function (evt) {

@@ -74,8 +74,8 @@
 
   var submitSuccessHandler = function (evt) {
     evt.preventDefault();
-    window.popup.modalCallOrder.classList.remove('modal-callback--active');
-    window.popup.modalSuccess.classList.add('modal-callback--active');
+    window.popup.modalCallOrder.classList.remove('modal-callback__wrapper--active');
+    window.popup.modalSuccess.classList.add('modal-callback__wrapper--active');
   };
 
   var init = function () {
