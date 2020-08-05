@@ -1,7 +1,8 @@
 .main-header {
   padding-top: 1px;
 
-  min-height: 879px;
+  // min-height: 879px;
+  min-height: 865px;
   background-color: _palette(light-bg-color);
   background-image: url('../img/main-header__bg.jpg');
   background-repeat: no-repeat;
@@ -92,6 +93,7 @@
 
 @media (max-width: _breakpoint(mobile)) {
   .main-header {
+    min-height: 620px;
     background-image: url('../img/main-header__bg--mobile.jpg');
     background-position: center 35px;
     background-size: 912px 617px;
