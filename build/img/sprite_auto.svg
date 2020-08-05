@@ -19,4 +19,8 @@
 </symbol><symbol id="icon-close" viewBox="0 0 18 17">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.48467 8.5L0 1.50703L1.41767 2.46254e-07L9 7.08422L16.5823 0L18 1.50703L10.5153 8.5L18 15.493L16.5823 17L9 9.91578L1.41767 17L6.13436e-07 15.493L7.48467 8.5Z" fill="url(#paint0_linear)"/>
 
+</symbol><symbol id="icon-play" viewBox="0 0 96 96">
+<circle opacity="0.32" cx="48" cy="48" r="48" fill="white"/>
+<circle cx="48" cy="48" r="32" fill="white"/>
+<path d="M58 47.5L43 57V38L58 47.5Z" fill="#1FC0FC"/>
 </symbol></svg>
