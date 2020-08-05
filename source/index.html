@@ -36,65 +36,91 @@
       <div class="main-header__promo">
         <h1>Учёба, путешествие и карьера для еврейской молодёжи</h1>
 
-        <a href ="#" class="main-header__scroll-down" aria-label="Переключить страницу"></a>
+        <a href ="#anchor-program" class="main-header__scroll-down" aria-label="Переключить страницу"></a>
       </div>
    </div>
   </header>
 
-  <div class="modal-callback modal-callback--request">
-    <h3>Заказать звонок</h3>
+  <main>
+    <section class="program" id="anchor-program">
+      <h2>О программе</h2>
 
-    <button class="modal-callback__close-button" type="button" aria-label="Закрыть окно">
-      <svg width="18" height="17">
-        <use xlink:href="#icon-close"></use>
+      <p>
+        «Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле. В течение освоения программ предусмотрен грант от 4200 до 8400$.
+      </p>
+
+      <div class="program__wrapper">
+        <picture>
+          <source srcset="img/program__photo.webp, img/program__photo@2x.webp 2x" type="image/webp">
+          <source srcset="img/program__photo.png, img/program__photo@2x.png 2x" type="image/png">
+          <!-- 1х: 870px; 2x: 1740px -->
+          <img src="img/program__photo.png" srcset="img/program__photo@2x.png 2x" alt="Фон для видео">
+        </picture>
+
+        <button class="program__button-play" type="button" aria-label="Воспроизвести видео">
+          <svg class="test" width="96" height="96">
+            <use xlink:href="#icon-play"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="modal-callback">
+    <div class="modal-callback__wrapper modal-callback__wrapper--request">
+      <h3>Заказать звонок</h3>
+
+      <button class="modal-callback__close-button" type="button" aria-label="Закрыть окно">
+        <svg width="18" height="17">
+          <use xlink:href="#icon-close"></use>
+        </svg>
+      </button>
+
+      <p class="modal-callback__text">
+        Оставьте ваши контактные данные, мы свяжемся c вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!
+      </p>
+
+      <form class="modal-callback__form">
+        <div class="modal-callback__input-wrapper">
+          <label for="name">Введите своё имя</label>
+          <input type="text" name="name" id="name" minlength="2" placeholder="имя" required>
+        </div>
+
+        <div class="modal-callback__input-wrapper">
+          <label for="cellphone">Введите номер телефона</label>
+          <input type="tel" name="cellphone" id="cellphone" placeholder="телефон" required>
+        </div>
+
+        <button class="modal-callback__button button" type="submit">перезвоните мне</button>
+
+        <div class="modal-callback__checkbox-wrapper">
+          <input type="checkbox" name="arrangement" id="arrangement" required>
+          <label for="arrangement">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
+        </div>
+      </form>
+    </div>
+
+    <div class="modal-callback__wrapper modal-callback__wrapper--success">
+      <svg class="modal-callback__checkmark" width="64" height="71">
+        <use xlink:href="#icon-checkmark"></use>
       </svg>
-    </button>
 
-    <p class="modal-callback__text">
-      Оставьте ваши контактные данные, мы свяжемся c вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!
-    </p>
+      <h3>Заявка принята</h3>
 
-    <form class="modal-callback__form">
-      <div class="modal-callback__input-wrapper">
-        <label for="name">Введите своё имя</label>
-        <input type="text" name="name" id="name" minlength="2" placeholder="имя" required>
-      </div>
+      <button class="modal-callback__close-button modal-callback__close-button--success" type="button" aria-label="Закрыть окно">
+        <svg width="18" height="17">
+          <use xlink:href="#icon-close"></use>
+        </svg>
+      </button>
 
-      <div class="modal-callback__input-wrapper">
-        <label for="cellphone">Введите номер телефона</label>
-        <input type="tel" name="cellphone" id="cellphone" placeholder="телефон" required>
-      </div>
+      <p class="modal-callback__text">
+        Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!
+      </p>
 
-      <button class="modal-callback__button button" type="submit">перезвоните мне</button>
-
-      <div class="modal-callback__checkbox-wrapper">
-        <input type="checkbox" name="arrangement" id="arrangement" required>
-        <label for="arrangement">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
-      </div>
-    </form>
+      <button class="modal-callback__button modal-callback__button--got-it button" type="button">понятно</button>
+    </div>
   </div>
-
-  <div class="modal-callback modal-callback--success">
-    <svg class="modal-callback__checkmark" width="64" height="71">
-      <use xlink:href="#icon-checkmark"></use>
-    </svg>
-
-    <h3>Заявка принята</h3>
-
-    <button class="modal-callback__close-button modal-callback__close-button--success" type="button" aria-label="Закрыть окно">
-      <svg width="18" height="17">
-        <use xlink:href="#icon-close"></use>
-      </svg>
-    </button>
-
-    <p class="modal-callback__text">
-      Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!
-    </p>
-
-    <button class="modal-callback__button modal-callback__button--got-it button" type="button">понятно</button>
-  </div>
-
-  <div class="modal-overlay"></div>
 
   <div class="visually-hidden">
     <include src="build/img/sprite_auto.svg"></include>
