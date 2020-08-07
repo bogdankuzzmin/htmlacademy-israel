@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
 
+  margin-bottom: 195px;
+
   background-image: url(../img/program__bg.png);
   background-repeat: no-repeat;
   background-size: 1366px 604px;
@@ -56,6 +58,12 @@
   }
 }
 
+@media (max-width: _breakpoint(tablet)) {
+  .program {
+    margin-bottom: 100px;
+  }
+}
+
 @media (max-width: _breakpoint(mobile)) {
   .program {
     display: flex;
@@ -82,4 +90,3 @@
     height: 80px;
   }
 }
-
