@@ -13,8 +13,6 @@
   var body = document.querySelector('body');
 
   var openModalCallOrderHandler = function () {
-    // modalOverlay.classList.add('modal-overlay--active');
-
     modalCallOrder.classList.add('modal-callback__wrapper--active');
     modalOpen.classList.add('modal-callback--active');
     body.classList.add('scroll-lock');
@@ -35,6 +33,7 @@
     modalOpen.removeEventListener('click', clickModalOverlayHandler);
     closePopupCallOrder.removeEventListener('click', closeModalCallOrderHandler);
     closePopupSuccess.removeEventListener('click', closeModalSuccessHandler);
+    closePopupSuccessMain.removeEventListener('click', closeModalSuccessHandler);
   };
 
   var closeModalSuccessHandler = function () {
