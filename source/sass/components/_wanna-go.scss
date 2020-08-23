@@ -1,0 +1,57 @@
+.wanna-go {
+  padding-top: 210px;
+  min-height: 700px;
+
+  background-image: url('../img/wana-go__bg-1.png'), url('../img/wanna-go__bg.png');
+  background-size: 147px 262px, 818px 594px;
+  background-position: 0 40%, 100% 30%;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.wanna-go__wrapper {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 945px + 30px;
+}
+
+.wanna-go__wrapper h2 {
+  margin-bottom: 25px;
+}
+
+.wanna-go__description {
+  margin-bottom: 65px;
+  width: 440px;
+
+  line-height: 170%;
+  opacity: 0.87;
+}
+
+.wanna-go__form-wrapper {
+  position: relative;
+}
+
+.wanna-go__form input {
+  padding: 18px 40px;
+  padding-right: 100px;
+  width: 340px;
+
+  font-weight: _font(weight-medium);
+  font-variant: small-caps;
+
+  border: 2px solid _palette(input-default);
+  border-radius: 80px;
+  outline: none;
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+}
+
+.wanna-go__form-button {
+  position: absolute;
+  left: 260px;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  min-width: auto;
+}
