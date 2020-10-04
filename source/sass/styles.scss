@@ -10,10 +10,8 @@
 @import 'base/_fonts';
 @import 'base/_typography';
 
-//Layouts.
-@import 'layouts/_main-header';
-
 // Components.
+@import 'components/main-header';
 @import 'components/buttons';
 @import 'components/modal-callback';
 @import 'components/program';
